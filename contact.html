@@ -14,7 +14,7 @@
   <h1 class="text-2xl font-bold text-green-900">Greenden</h1>
 
   <!-- Hamburger (Mobile) -->
-  <svg xmlns="http://www.w3.org/2000/svg"
+  <svg  id="menuicon" xmlns="http://www.w3.org/2000/svg"
        fill="none"
        viewBox="0 0 24 24"
        stroke-width="1.5"
@@ -51,6 +51,22 @@
 
 
 </nav>
+<!--Side navbar-->
+  <section id="sidenav"
+  class="bg-green-100 fixed top-0 right-[-50%] w-1/2 h-screen
+         z-[60] transition-all duration-300 md:hidden">
+
+        <div class="text-right p-5">  
+    <p id="close-nav" class="inline cursor-pointer">X</p>
+    </div>  
+    <ul class="flex flex-col gap-10 items-center text-gray-700 font-medium ">
+            <li><a href="index.html" class="hover:text-black">Home</a></li>
+            <li><a href="products.html" class="hover:text-black">Products</a></li>
+            <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+        </ul>
+    
+</section>
+
 <section class="bg-gradient-to-br from-green-50 via-white to-green-100">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 
@@ -117,6 +133,6 @@
     © 2025 Greenden.com — Growing happiness, naturally 🌿
   </p>
 </footer>
-
+<script src="contact.js"></script>
 </body>
 </html>
